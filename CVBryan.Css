@@ -1,0 +1,227 @@
+@page {
+    size: A4; /* Menentukan ukuran halaman */
+    margin: 2cm; /* Mengatur margin halaman */
+
+}
+
+.container {
+    transform: scale(0.90); /* Sesuaikan angka ini untuk memperbesar atau memperkecil */
+    transform-origin: top center; /* Menjaga posisi tetap di tengah */
+    max-width: 80%; /* Mengurangi lebar agar lebih pas di layar */
+    height: auto; /* Mengatur tinggi otomatis */
+}
+
+
+/* --- Tampilan Utama --- */
+body {
+    font-family: 'Poppins', sans-serif; /* Font utama */
+    background-color: #e0dfdf; /* Warna latar belakang */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Kontainer CV --- */
+.container {
+    display: flex; /* Menyusun elemen secara horizontal */
+    max-width: 22cm; /* Lebar maksimal */
+    height: 24cm; /* Tinggi kontainer */
+    background: white; /* Warna latar dalam */
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    border-radius: 10px; /* Sudut melengkung */
+    overflow: hidden; /* Mencegah konten keluar batas */
+}
+
+/* --- Bagian Kiri (Sidebar) --- */
+.left {
+    background: #0db3aa; /* Warna sidebar */
+    color: white; /* Warna teks */
+    padding: 30px;
+    width: 35%; /* Lebar sidebar */
+    text-align: center;
+}
+
+/* --- Foto Profil --- */
+.left img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Foto berbentuk lingkaran */
+    border: 5px solid rgb(255, 210, 246); /* Garis putih di sekeliling foto */
+}
+
+/* --- Judul dalam Sidebar --- */
+.left h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    text-transform: uppercase; /* Huruf kapital semua */
+    border-bottom: 2px solid white; /* Garis bawah */
+    padding-bottom: 5px;
+}
+
+/* --- Konten Sidebar (Teks & List) --- */
+.left p, .left ul li {
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Jarak antar elemen */
+    transition: color 0.3s ease; /* Transisi warna */
+}
+
+.left p a {
+    color: white; /* Warna link */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+}
+
+.left p a:hover {
+    color: #ffdc3d; /* Warna saat hover */
+}
+
+.location {
+    text-decoration: underline; /* Garis bawah untuk lokasi */
+}
+
+.location:hover {
+    color: #ffdc3d; /* Warna saat hover pada lokasi */
+}
+
+.left ul {
+    list-style-type: none; /* Menghapus bullet point */
+    padding: 0;
+}
+
+/* --- Bagian Kanan (Konten Utama) --- */
+.right {
+    padding: 18px;
+    width: 65%;
+}
+
+/* --- Rata Kanan untuk Profile --- */
+.right p {
+    text-align: justify;
+    line-height: 1.3; /* Sesuaikan jika perlu */
+    word-spacing: -0.7px; /* Mengurangi jarak antarkata */
+
+}
+
+/* --- Judul di Bagian Kanan --- */
+.right h2 {
+    font-size: 20px;
+    color: #2C3E50; /* Warna judul */
+    text-transform: uppercase;
+    border-bottom: 2px solid #2C3E50; /* Garis bawah */
+    padding-bottom: 5px;
+}
+
+/* --- List di Bagian Kanan --- */
+.right ul {
+    list-style-type: none; /* Menghapus bullet point */
+    padding: 0;
+}
+
+.right ul li {
+    font-size: 15px;
+    margin: 10px 0; /* Jarak antar item */
+}
+
+/* --- Ikon Media Sosial --- */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* --- Gambar Ikon Media Sosial --- */
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease-in-out; /* Efek animasi */
+    background: none; /* Menghapus latar belakang */
+    border-radius: 0; /* Menghilangkan efek bulat */
+    border: none; /* Menghilangkan border putih */
+}
+
+/* --- Efek Hover pada Ikon --- */
+.social-icons a img:hover {
+    transform: scale(1.2); /* Memperbesar ikon saat dihover */
+}
+
+/* --- Tampilan Utama --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('Back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Kontainer Login --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.5); /* Transparan dengan efek blur */
+    backdrop-filter: blur(2px); /* Efek blur untuk tampilan lebih estetik */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+
+/* --- Judul Login --- */
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+/* --- Input & Select --- */
+.login-form input,
+.login-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* --- Tombol Login --- */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0db3aa;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #009688;
+}
+
+/* --- Label Form --- */
+.login-form label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Hilangkan background gambar setelah login */
+.cv-active {
+    background-image: none !important;
+    background-color: #e0dfdf !important; /* Warna latar belakang standar */
+}
+
+
+
+

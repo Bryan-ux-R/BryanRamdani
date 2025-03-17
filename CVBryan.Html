@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Muhammad Bryan Ramdani</title>
+    <link rel="stylesheet" href="CVBryan.Css">
+    
+</head>
+<body>
+
+    <div class="login-container">
+        <form class="login-form" id="loginForm">
+            <h2>Login</h2>
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Masukkan username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Masukkan password">
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+
+            <label for="fav-code">Kode Favorit</label>
+            <select id="fav-code">
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="cpp">C++</option>
+                <option value="java">Java</option>
+                <option value="php">PHP</option>
+            </select>
+
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+
+    <div class="container" style="display: none;"> <!-- Menyembunyikan konten CV hingga login berhasil -->
+        <div class="left">
+            <img src="Bryan.jpg" alt="Foto Profil">
+            <h2>Contact</h2>
+            <p>📞 <a href="tel:+6282172837470">+62-821-7283-7470</a></p>
+            <p>📧 <a href="mailto:mbryanramdani@gmail.com">mbryanramdani@gmail.com</a></p>
+            <p>📍 <a href="https://www.google.com/maps/place/Tanjung+Priok,+Jakarta+Utara" target="_blank" class="location">Tanjung Priok, Jakarta Utara</a></p>
+
+            <h2>Social Media</h2>
+            <div class="social-icons">
+                <a href="https://www.twitter.com/usernam=" target="_blank">
+                    <img src="Tw.png" alt="twitter">
+                </a>
+                <a href="https://www.instagram.com/username" target="_blank">
+                    <img src="IG.png" alt="Instagram">
+                </a>
+                <a href="https://tiktok.com/username" target="_blank">
+                    <img src="tiktok.png" alt="tiktok">
+                </a>
+            </div>
+
+            <h2>Skills</h2>
+            <ul>
+                <li>● Analisis Mata Uang Crypto</li>
+                <li>● Pedagang Crypto</li>
+                <li>● Kriptografi</li>
+            </ul>
+            <h2>Soft Skills</h2>
+            <ul>
+                <li>● Antusias dan menghargai sesama</li>
+                <li>● Cepat beradaptasi dalam tim</li>
+                <li>● Mampu bekerja sama</li>
+            </ul>
+        </div>
+        <div class="right"> 
+            <h1>MUHAMMAD BRYAN RAMDANI</h1>
+            <h2>Profile</h2>           
+            <p> 
+            Saya adalah mahasiswa Sistem Informasi di Telkom University Kampus Jakarta dengan latar belakang Teknik Komputer dan Jaringan. Ia memiliki keahlian dalam analisis dan perdagangan kripto serta kriptografi. 
+            Berpengalaman di PT. Lintas Jaringan Nusantara dan PT. Pelindo, memahami dunia industri dan teknologi. Aktif sebagai Humas HMSI dan anggota Kyoukushinkaikan Karate Klub Cibinong sejak 2017, Saya mengedepankan adaptasi, kerja tim, dan profesionalisme dalam setiap tantangan.</p>
+            <h2>Education</h2>
+            <ul>
+                <li><strong>2018 - 2020</strong> MTSN 1 Kota Dumai</li>
+                <li><strong>2020 - 2023</strong> SMKN 2 Kota Dumai - Teknik Komputer dan Jaringan</li>
+                <li><strong>2023 - Sekarang</strong> Telkom University Jakarta - Sistem Informasi</li>
+            </ul>
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>2022 -</strong> PT. Lintas Jaringan Nusantara</li>
+                <li><strong>2022 -</strong> PT. Pelindo </li> 
+            </ul>
+            <h2>Organizational Experience</h2>
+            <ul>
+                <li><strong>2024 - Sekarang</strong> Himsi | Himpunan Mahasiswa Sistem Informasi</li>
+                <li><strong>2017 - Sekarang</strong> Kyoukushinkaikan Karate Klub Cibinong</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+    if (username === '' && password === '') {
+        document.body.classList.add('cv-active'); // Menambahkan class baru ke body
+        document.body.classList.remove('login-background'); // Menghapus background login
+        document.querySelector('.login-container').style.display = 'none';
+        document.querySelector('.container').style.display = 'flex';
+
+    } else {
+        alert('Username atau password salah!');
+    }
+    
+});
+
+
+    </script>
+</body>
+</html>
